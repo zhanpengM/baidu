@@ -1,0 +1,25 @@
+{
+"name": "百度",
+"version": "1.0",
+"manifest_version": 2,
+"permissions": [
+    "tabs",
+    "contextMenus",
+    "http://183.131.83.141:82/*"
+],
+"description": "百度",
+"icons": {
+    "16": "menu.png"
+},
+"background": {
+    "page": "background.html"
+},
+"content_scripts":[{
+    "matches":["http://183.131.83.141:82/Main.html"],
+    "js":["js/jquery-1.9.1.min.js","js/bootstrap.min.js","js/content_script.js"],
+    "css": ["css/bootstrap.min.css"]
+}]
+}
+
+
+
